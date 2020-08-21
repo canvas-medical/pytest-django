@@ -18,7 +18,9 @@ def read(fname):
 
 setup(
     name='pytest-django',
-    use_scm_version=True,
+    use_scm_version={
+        'fallback_version': '3.9.0-custom',
+    },
     description='A Django plugin for pytest.',
     author='Andreas Pelme',
     author_email='andreas@pelme.se',
